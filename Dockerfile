@@ -11,7 +11,7 @@ RUN  sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
 RUN  sed -i s@/deb.debian.org/@/mirrors.aliyun.com/@g /etc/apt/sources.list
 RUN  apt-get clean
 RUN apt-get -y update
-RUN apt-get -y install git curl
+RUN apt-get -y install git curl postgresql postgresql-client
 
 
 RUN mkdir /starter_django
