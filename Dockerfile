@@ -23,5 +23,4 @@ RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 EXPOSE 8000
 
-#CMD ["python", "manage.py","runserver"]
-ENTRYPOINT ["/bin/bash"]
+CMD ["python", "manage.py","runserver"]
